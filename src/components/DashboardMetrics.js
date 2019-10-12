@@ -11,10 +11,10 @@ export class DashboardMetrics extends React.Component {
                 <div style={{ marginTop: -100, marginLeft: 200 }}>
                     <RevenueController />
                 </div>
-                <div style={{ marginTop: -100, marginLeft: 600 }}>
+                <div style={{ marginTop: -440, marginLeft: 600 }}>
                     <ImpresionsController />
                 </div>
-                <div style={{ marginTop: -100, marginLeft: 1000 }}>
+                <div style={{ marginTop: -440, marginLeft: 1000 }}>
                     <VisitsController />
                 </div>
             </div >
