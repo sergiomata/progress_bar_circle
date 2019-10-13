@@ -12,6 +12,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import { easeQuadInOut } from 'd3-ease';
 import AnimatedProgressProvider from '../providers/AnimatedProgressProvider';
 import ChangingProgressProvider from '../providers/ChangingProgressProvider';
+import { numberWithCommas } from '../utils/number'
 
 // Radial separators
 import RadialSeparators from '../providers/RadialSeparators';
@@ -25,14 +26,15 @@ export class ProgressCircle extends React.Component {
             total: props.total,
             primaryColor: props.primaryColor,
             secondColor: props.secondColor,
-            circleText: props.circleText
+            circleText: props.circleText,
+            extraText: props.extraText
+
         }
     }
     
     render() {
         return (
             <div>
-                <Example label="EXam PC">
                     <AnimatedProgressProvider
                         valueStart={0}
                         valueEnd={this.state.gain/this.state.total*100}
@@ -55,28 +57,20 @@ export class ProgressCircle extends React.Component {
                                         trailColor: this.state.secondColor,
                                     })}>
                                     {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
-                                    <div style={{ fontSize: 20, marginTop: -20, color: '#C0C0C0' }}>
-                                        <strong>{`${this.state.circleText}`}</strong>
+                                    <div style={{ fontSize: 18, marginTop: -20, color: '#C0C0C0' }}>
+                                        {`${this.state.circleText}`}
                                     </div>
-                                    <div style={{ fontSize: 20}}>
-                                        <strong>{`${roundedValue}`}</strong>
+                                    <div style={{ fontSize: 24}}>
+                                        <strong>{`${numberWithCommas(roundedValue)}${this.state.extraText}`}</strong>
                                     </div>
                                 </CircularProgressbarWithChildren>
                             );
                         }}
                     </AnimatedProgressProvider>
-                </Example>
 
             </div>
         );
 
-        function Example(props) {
-            return (
-                <div >
-                    <div style={{ width: 200}}>{props.children}</div>
-                </div>
-            );
-        }
     }
 
 }

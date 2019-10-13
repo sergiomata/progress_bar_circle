@@ -1,0 +1,142 @@
+$primaryColorRevenue: #336600;
+$secondColorRevenue: #4C9900;
+$primaryColorImpresions: #001933;
+$secondColorImpresions: #66B2FF;
+$primaryColorVisits: #994C00;
+$secondColorVisits: #CCCC00;
+$secondColor: #575852;
+$tabletPorcentColor: #352f2f;
+$tabletGainColor: #C0C0C0;
+$smartphonePorcentColor: #352f2f;
+$smartphoneGainColor: #C0C0C0;
+
+.app {
+    font-family: Helvetica;
+}
+
+.revenue_controller, .impresions_controller, .visits_controller{
+    display:block;
+    float:left;
+    
+}
+.circle_container{
+    margin-top: 50px;
+    margin-left: 50px   ;
+    width: 200px;
+    height: 200px;
+}
+
+.progress_circle{
+    margin-top: 20;
+    margin-left: 50;
+    width: 200;
+    height: 200;
+}
+
+.revenue_controller {
+    .main_container{
+        width: 300px;
+        height: 300px;
+        .smartphone_container{
+            float: right;
+            width: 140px;
+            text-align: right;
+            padding-right: 10px;
+            .smartphone_main{
+                color: $primaryColorRevenue;
+            }
+            .smartphone_porcent {                
+                color: $smartphonePorcentColor;
+            }
+            .smartphone_gain {             
+                color: $smartphoneGainColor;
+            }
+        }
+        .tablet_container{
+            float: left;
+            width: 140px;
+            padding-left: 10px;
+            .tablet_main{
+                color: $secondColorRevenue;
+            }
+            .tablet_porcent {
+                color: $tabletPorcentColor;
+            }
+            .tablet_gain {
+                color: $tabletGainColor;
+            }
+        }    
+    }
+}
+
+.impresions_controller {
+    .main_container{
+        width: 300px;
+        height: 300px;
+        .smartphone_container{
+            float: right;
+            width: 140px;
+            text-align: right;
+            padding-right: 10px;
+            .smartphone_main{
+                color: $primaryColorImpresions;
+            }
+            .smartphone_porcent {                
+                color: $smartphonePorcentColor;
+            }
+            .smartphone_gain {             
+                color: $smartphoneGainColor;
+            }
+        }
+        .tablet_container{
+            float: left;
+            width: 140px;
+            padding-left: 10px;
+            .tablet_main{
+                color: $secondColorImpresions;
+            }
+            .tablet_porcent {
+                color: $tabletPorcentColor;
+            }
+            .tablet_gain {
+                color: $tabletGainColor;
+            }
+        }    
+    }
+}
+
+.visits_controller {
+    .main_container{
+        width: 300px;
+        height: 300px;
+        .smartphone_container{
+            float: right;
+            width: 140px;
+            text-align: right;
+            padding-right: 10px;
+            .smartphone_main{
+                color: $primaryColorVisits;
+            }
+            .smartphone_porcent {                
+                color: $smartphonePorcentColor;
+            }
+            .smartphone_gain {             
+                color: $smartphoneGainColor;
+            }
+        }
+        .tablet_container{
+            float: left;
+            width: 140px;
+            padding-left: 10px;
+            .tablet_main{
+                color: $secondColorVisits;
+            }
+            .tablet_porcent {
+                color: $tabletPorcentColor;
+            }
+            .tablet_gain {
+                color: $tabletGainColor;
+            }
+        }    
+    }
+}

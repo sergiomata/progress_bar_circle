@@ -1,5 +1,7 @@
 
 import React from 'react';
+import '../scss/styleDashboardMetrics.scss'
+import { numberWithCommas } from '../utils/number'
 
 const smartphonePorcentColor = '$04040';
 const smartphoneGainColor = 'E0E0E0';
@@ -19,10 +21,10 @@ export class SmartphoneContainer extends React.Component {
     }
     render() {
         return (
-            <div >
-                <p style={{ color : this.state.primaryColor}}> {'SMARTPHONE'} </p>
-                <p style={{ color: this.state.smartphonePorcentColor }}>{this.state.smartphonePorcent+'%'}</p>
-                <p style={{ color: this.state.smartphoneGainColor }}>{this.state.smartphoneGain+this.state.extraText}</p>
+            <div className='smartphone_container'>
+                <h4 className= 'smartphone_main'> {'Smartphone'} </h4><br></br>
+                <p className= 'smartphone_porcent'>{this.state.smartphonePorcent+'%  '}</p>
+                <p className= 'smartphone_gain'>{numberWithCommas(this.state.smartphoneGain)+this.state.extraText}</p>
             </div>
         );
     }
