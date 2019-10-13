@@ -1,9 +1,9 @@
-$primaryColorRevenue: #336600;
+$primaryColorRevenue: #065c0f;
 $secondColorRevenue: #4C9900;
 $primaryColorImpresions: #001933;
 $secondColorImpresions: #66B2FF;
 $primaryColorVisits: #994C00;
-$secondColorVisits: #CCCC00;
+$secondColorVisits: #f5d72f;
 $secondColor: #575852;
 $tabletPorcentColor: #352f2f;
 $tabletGainColor: #C0C0C0;
@@ -15,6 +15,7 @@ $smartphoneGainColor: #C0C0C0;
 }
 
 .revenue_controller, .impresions_controller, .visits_controller{
+    margin-left: 100px;
     display:block;
     float:left;
     

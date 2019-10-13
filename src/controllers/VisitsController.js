@@ -4,7 +4,7 @@ import { getVisits } from '../models/VisitsModel';
 import { MainContainer } from '../components/MainContainer';
 
 const primaryColorVisits = '994C00';
-const secondColorVisits = 'CCCC00';
+const secondColorVisits = 'f5d72f';
 const circleTextVisits = 'VISITS';
 const extraTextVisits = '';
 
